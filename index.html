@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="form">
+        <div class="form__group">
+            <label class="label">Username: <span class="red">(*)</span></label>
+            <input class="username" type="text" placeholder="Nhập đầy đủ họ tên!" onblur="checkUserName()">
+            <p class="err err_name"></p>
+        </div>
+        <div class="form__group">
+            <label class="label">Email: <span class="red">(*)</span></label>
+            <input class="email" type="email" onblur="checkEmail()">
+            <p class="err err_email"></p>
+        </div>
+        <div class="form__group">
+            <label class="label">Password: <span class="red">(*)</span></label>
+            <input class="password" type="password" onblur="checkPass()">
+            <p class="err err_password"></p>
+        </div>
+        <div class="form__group">
+            <label class="label">Check Password: <span class="red">(*)</span></label>
+            <input class="repassword" type="password" onblur="checkRePass()">
+            <p class="err err_repassword"></p>
+        </div>
+
+        <button class="btn" onclick="submit()">Submit</button>
+    </div>
+
+    <script src="./assets/css/main.js"></script>
+</body>
+</html>
